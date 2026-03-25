@@ -1,0 +1,54 @@
+MLOPS
+    1. Github
+        Git hubhooks
+    2. Jenkins (used to create CI/CD pipeline)
+    3.DOcker (create image and submit to customer)
+    4 EC2 (Virtual machine)
+
+Steps:
+    1. Create EC2 Instance
+
+    2. Open below ports
+        8000 (uviconr will run in this ports, TCP Protocol)
+        8080 (Jenkins, TCP)
+        80. (Docker, http)
+
+    3. Connect to EC2 and updaate ubuntu
+        > sudo apt update -y
+
+    4. install Jenkins
+        JENKINS.IO
+
+    5. install Docker
+        sudo apt update -y
+        sudo apt install docker.io -y
+        docker --version
+
+    6. enable communication between the softwares (enable permissions)
+        docker Jenkins
+        docker ubuntu
+        jenkins ubuntu
+
+        sudo usermod -ag docker Jenkins
+        sudo usermod -ag docker ubuntu
+        sudo usermod -ag jenkins ubuntu
+
+
+        sudo systemctl restart jenkins (restart system)
+        sudo systemctl status jenkins
+
+    7. get the jenkins password
+
+    8. Create Dockerfile
+
+    9. Push code to repository
+
+
+    10 Prepare pipeline
+        jenkinsfile
+
+    11 Connect ti Jenkins
+        install nelow plugins
+            1. Docker
+            2. Docker pipeline
+            3. GitServer

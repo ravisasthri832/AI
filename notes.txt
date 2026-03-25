@@ -1,0 +1,243 @@
+#https://github.com/fullstacktraning/datascience-7am-batch
+https://github.com/fullstacktraning/ashokit-datascience-7am
+
+Graphs:
+*********
+
+
+> python -m venv venv (Instal virtual environment)
+> source venv/bin/activate(mac book activation)
+> venv\Scripts\activate (Windows activation)
+> venv\Scripts\activate.psi (ubuntu activation)
+requirements.txt
+> pip install -r requirements.txt
+python.exe -m pip install --upgrade pip
+
+Seaborn:
+    Lineplot
+    arplot
+    Histogram
+    Boxp\lot
+    Violinplot
+    Scatterplot
+    HeatmapB
+
+import seaborn as abc
+df=abc.load_dataset("")
+print(df.head())
+
+
+
+
+
+tuples:
+-------
+    - Ordered
+    - immutable (no value or reference change)
+    - allow duplicates
+    - allow different data types
+    - indexed
+    - slicing possible
+    - iteration
+    - unpacking
+    - nesting also possible
+    - faster than lists
+
+------------------------------------------------
+------------------------------------------------
+AI:
+    1. ML
+    2. DL
+    3. NLP
+    4. Gen AI 
+    5. Agentic AI
+
+In AI we have 2 terminologies
+    - Regression
+        - If machine output is data we called as Regression (data, like amount, apple, marks, red etc), predicting contineoud values.
+    - Clasifications
+        - If machine output is boolean (yes or no) we can called as Clasification, Predict Yes or No etc
+
+ML
+--
+    - Machine Learning from historic data and based on previous data machine will predict the future data.
+    - Machine Learning categorised into 3 parts
+        1. Supervised (Regression)
+            - Train Machine with labeled data
+            - Ex: image - cat, fruite - apple
+            a. Linear Regression (y=mx+b)
+                Uses:
+                    - To predict contineous Results
+                    - degree of polinomial is 2
+                    - Sales forcasting
+                    - House pricing
+                    - salary prediction
+                - How output changes based on the input
+                    - y= output
+                    - m= slope (y changes based on x)
+                    - x= input/feature
+                    - b= constant ( base value / Intercept )
+                - Example
+                    - Company pay : 500/- per day
+                    - bonus: 1000/-
+                    - 5 days-- ?
+                    - y=500*5+1000
+                    - y=3500/- (output)
+                - Linear Regression value varies from Negative to Positive
+                - It may used to predict Negative values also
+            b. Logistic Regression (Classification Type)
+                - Formula is Sigmoid (The derivation coming from Linear Regression)
+                - output is boolean (true or false)
+                Use Cases:
+                    - Small dataset evaluation
+                    - Spam / Not Spam Emails
+                    - Student Performance
+                - Value between 0-1 (probability)
+                - >0.5 (Class A - True)
+                - <0.5 (Class B - False)
+            c. Naive Biase model (Classification Type)
+                Use Cases:
+                    - Large Data set and more synonums
+                    - Free / Offers / Buy 1 Get 1
+                1. Divide the data (Fails & Passes)
+                2. Find the probability 
+                    - p(fail) = number of fail/number of students
+                3. find mean value 
+                    u=x1+x2/n 
+                4. find standard deviation
+                5. Gaussian formula
+                    p(x0=)
+            d. DecisionTree (Classification Type)
+                Use Cases:
+                    - Loan Approval
+                    - Medical Diagnosis
+                - internally working on Information Gain (mathematical formula)
+                - Step 1 : Find Parent Entropy (saggregate pass & Fail) [Left entropy, right entropy & Weighted entropy]
+                - step 2 : find probability of pass
+                - step 3: find probability of fail
+                - step 4: Identify the information Gain
+                - Who has highest IG value     
+                - Entropy formla [(-P(pass)log2(P(pass))-(P(fail)log2(P(fail))))]
+            e. RandomForest (multiple / Combination of decision tree)
+                - Combination of decision trees
+                - more accuray than decision tree
+                - step 1 : Identify Parent Entropy {by Considering all trees}
+                            PE= -(4/8 log2 4/8)-(4/8 log2 4/8)
+                            PE = 1
+                - step 2 : Devide data into multiple trees
+                - step 3 : Find Entropy, Weighted Entropy, Information Entropy
+            Hirarichal
+            f. KNN (K Nearest Neighbour)
+                Use Cases:
+                    - Prediction System
+                    - Reviews / Recommondation Predictions
+                - Euclidean Formula --> sqrt((x2-c2)wholesquar+(y2-y1)wholesquar)
+            g. SVM (Support Vector Modal/Machine)
+                - It will comes under both regression and clasification.
+                - it more focused on clasification only
+                - Linear SVM
+                - Non  Linear SVM (Z property need to be introduced and need to draw circle)
+                - Between data points need to draw one line which is called Hyper Plane
+                - Nearest data endpoint is called support vector
+                - space or distance between 2 support vectors is called Margin
+                - We need to draw the best line- -
+                - used mainly for the Image Clasification 
+                - Also used to convert handwritten text to computer converted text
+                - Understand the medical report analysis like x rays 
+                - Used in face recognizing machines
+                - formula wx + b  [w is weight and b is biase]
+        2. Unsupervised   
+            - Modal Training with Festures only. 
+            - Train machine without labeled data
+            - Ex: Customer data
+            Algorithms:
+            ----------
+                A. Clustering Algorithm:
+                    a. K-Means Clustering
+                        - Euclidean formaula to identify the distancce between the Data points to Centroid  .
+                        - Based on the purchasing history need to clasify the data
+                    b. Hierarchical Clustering:
+                        - Combination of More number of K-Means Clusterings
+                B. DBSCAN (density Based) Algorithm
+                C. Dimensionality Reduction
+                    a. PCA (Principal Component Analysis)
+                        - Core idea is to create new features (Principal Components)
+                        - We dont have lablled data
+                        - Used to reduce the dimentions / Number of Features
+                        - Used to Keep Most important information and delete unncessary information
+                        - It is unsupervised learning
+                        - To over come
+                            - Slow training
+                            - Hard to understand more number of columns 
+                            - Some features are duplicate (correlated)
+                        - Use Cases:
+                            - Compressing very large image to small image without missing quality
+                        - Steps for PCA:
+                            Initially Take the dataset 
+                            step 1: Find the mean value (for both x1 & x2)
+                            Step 2: Find the Co-variance matrix (S)
+                            step 3: Find out the Eigen Values (Eigen Values will tell the important festures), We can get the 2 Eigen values(U) from quadratic equations
+                            step 4: Calculate Eigen Vectors with the help of Eigen Values
+                            step 5: Identify Unit Eigen Vectors
+                            step 6: Find the intercept values (e1 & E2)
+                            step 7: calculate PCA
+
+
+                    b. t-SNE
+                    c. Association Rule Learning
+                D. 
+
+        3. Reinforcement
+            - Machine learning Rewards or Punishments
+
+
+        
+    - Machine Learning Flow:
+        1. Collect the data
+            - input data we can called as Features
+        2. Clean the data
+            - check record by record for nulls or emptys
+        3. Choose the model (Right machematical formula to understand data)
+            - y=mx+c
+        4. Train the model
+            - give our data to mathematical formula
+        5. Test the model
+            - Output data we can called as label
+        6. Release the model
+            - Impliment CI/CD Pipeline
+
+
+#############################
+Error = y(actual)-y(prediction)
+    Errors are 3 types
+    1. Bias 
+        If the  modeal not train trained properly
+            - High Training Error (High Biase)
+            - Bad Testing Results (High Variance)
+            - degree of polinomial = 1 (Stright line )
+            - degree of polinomial = 2 (Curved line ) - Which is Best one.
+            -   Under fitting
+    2. Variance Error
+            - Model trained properly but the testing is working
+            - Good Training
+            - Low Training Error (Low Biase)
+            - Bad Training Results (High Variance)
+            - degree of polinomial = 3 greater than  (Zig Zag)
+            - Over fitting
+                - Techniques:
+                    - Increase training data
+                    - decrease the degree of polinomial 
+                    - Reduce in early training phase
+                    descent gradient (training data will touuch the 0 then we need to stop training)
+    3. Noise Error
+        - If the data containes any missed content
+        - Empty Values
+
+
+        Gradient descent
+        Accuracy
+        Precision
+        Confusion matrix
+        Recall
+        F1 Score
+        train_test_split
