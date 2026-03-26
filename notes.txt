@@ -154,10 +154,18 @@ ML
             ----------
                 A. Clustering Algorithm:
                     a. K-Means Clustering
-                        - Euclidean formaula to identify the distancce between the Data points to Centroid  .
+                        - Euclidean formaula to identify the distancce between the Data points to Centroid .
                         - Based on the purchasing history need to clasify the data
+                        - To identify the K Value(number of clustering groups) programatically we have 2 methods
+                            - Elbow Method 
+                                - WCSS (Within the Cluster Square of Sums) formaula 
+                            - Sihouette Method
                     b. Hierarchical Clustering:
                         - Combination of More number of K-Means Clusterings
+                    c. Agglomerative clustering
+                        - Used to identify the nearest elements and make a group
+                        - "bottom-up" hierarchical method that treats each data point as a single cluster and iteratively merges the closest pairs of clusters based on a distance metric and linkage criterion until one cluster remains
+                        - Ex: Monkeys groups, dogs group
                 B. DBSCAN (density Based) Algorithm
                 C. Dimensionality Reduction
                     a. PCA (Principal Component Analysis)
