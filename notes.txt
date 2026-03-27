@@ -166,7 +166,14 @@ ML
                         - Used to identify the nearest elements and make a group
                         - "bottom-up" hierarchical method that treats each data point as a single cluster and iteratively merges the closest pairs of clusters based on a distance metric and linkage criterion until one cluster remains
                         - Ex: Monkeys groups, dogs group
-                B. DBSCAN (density Based) Algorithm
+                B. DBSCAN ( Denssity Based Spatial Clustering of Applications with Noise) Algorithm
+                    - Clustering Based on Applications with Noise
+                    - Epsolon
+                    - Min Points - 3
+                        - Core point
+                        - Boundary point
+                            - Should have core point as Neighbour (Outliers))
+                        - Noise Point
                 C. Dimensionality Reduction
                     a. PCA (Principal Component Analysis)
                         - Core idea is to create new features (Principal Components)
@@ -192,7 +199,7 @@ ML
 
 
                     b. t-SNE
-                    c. Association Rule Learning
+                    c. Association Rule Learning (Diana)
                 D. 
 
         3. Reinforcement
