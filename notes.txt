@@ -163,17 +163,18 @@ ML
                     b. Hierarchical Clustering:
                         - Combination of More number of K-Means Clusterings
                     c. Agglomerative clustering
-                        - Used to identify the nearest elements and make a group
+                         - Used to identify the nearest elements and make a group
                         - "bottom-up" hierarchical method that treats each data point as a single cluster and iteratively merges the closest pairs of clusters based on a distance metric and linkage criterion until one cluster remains
                         - Ex: Monkeys groups, dogs group
-                B. DBSCAN ( Denssity Based Spatial Clustering of Applications with Noise) Algorithm
+                B. DBSCAN ( Density Based Spatial Clustering of Applications with Noise) Algorithm
                     - Clustering Based on Applications with Noise
                     - Epsolon
                     - Min Points - 3
                         - Core point
                         - Boundary point
-                            - Should have core point as Neighbour (Outliers))
-                        - Noise Point
+                            - Should have core point as Neighbour 
+                        - Noise Point (Outliers)
+                            - No Core, No min points
                 C. Dimensionality Reduction
                     a. PCA (Principal Component Analysis)
                         - Core idea is to create new features (Principal Components)
@@ -200,6 +201,13 @@ ML
 
                     b. t-SNE
                     c. Association Rule Learning (Diana)
+                        - Used to find the relat[ion between the items
+                        - Shopping mall items placing system (bread & butter)
+                        - Support 
+                            - How many purchesed both items
+                            - both items purchased / number of transaction
+                        - Confidence
+                            - both items purchased / single item purchased
                 D. 
 
         3. Reinforcement
