@@ -211,7 +211,14 @@ ML
                 D. 
 
         3. Reinforcement
-            - Machine learning Rewards or Punishments
+            - Machine learning from Rewards or Punishments
+                - Environment
+                - Agent
+                - Reward
+                    - Positive
+                    - Negative
+            - Q Learning
+                - Used to define the reward points
 
 
         
