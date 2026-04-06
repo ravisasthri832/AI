@@ -3,6 +3,6 @@ matplotlib # to draw graphs
 scikit-learn # provide machine learning algorithms
 pandas # used to read the data from excel sheets
 fastapi #build api
-uvicorn # to run fastapi
+uvicorn # it is a server to run fastapi
 openpyxl
 mlxtend
