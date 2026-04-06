@@ -47,7 +47,7 @@ tuples:
 ------------------------------------------------
 AI:
     1. ML
-    2. DL
+    2. DL (https://1drv.ms/w/c/3c192f04000bd1d2/IQCb72zLT-NSSJ5n_qHr0T9SAXGPt9iYBv0-YW2ritlMh3Y?e=X1Csou)
     3. NLP
     4. Gen AI 
     5. Agentic AI
