@@ -1,0 +1,9 @@
+numpy # for mathematical calculations
+matplotlib # to draw graphs
+scikit-learn # provide machine learning algorithms
+pandas # used to read the data from excel sheets
+fastapi #build api
+uvicorn # it is a server to run fastapi
+openpyxl
+mlxtend
+tensorflow #it will work with 3.11 verstion
