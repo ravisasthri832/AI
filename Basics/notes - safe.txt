@@ -1,12 +1,18 @@
 #https://github.com/fullstacktraning/datascience-7am-batch
 https://github.com/fullstacktraning/ashokit-datascience-7am
+https://github.com/fullstacktraning/ashokit-datascience-8am.git
+
+
+https://docs.google.com/spreadsheets/d/1LFPFVcOGEjEOS8bKUAJej0BVMLL6lu7ZiRw5H1eKcec/edit
+https://1drv.ms/w/c/3c192f04000bd1d2/IQCb72zLT-NSSJ5n_qHr0T9SAXGPt9iYBv0-YW2ritlMh3Y?e=WBATfg
+https://onedrive.live.com/:w:/g/personal/3c192f04000bd1d2/IQCb72zLT-NSSJ5n_qHr0T9SAXGPt9iYBv0-YW2ritlMh3Y?rtime=X-j6SweZ3kg&redeem=aHR0cHM6Ly8xZHJ2Lm1zL3cvYy8zYzE5MmYwNDAwMGJkMWQyL0lRQ2I3MnpMVC1OU1NKNW5fcUhyMFQ5U0FYR1B0OWlZQnYwLVlXMnJpdGxNaDNZP2U9V0JBVGZn 
 
 Graphs:
-*********
+**********
 
 
 > python -m venv venv (Instal virtual environment)
-> source enev/bin/activate(mac book activation)
+> source venv/bin/activate(mac book activation)
 > venv\Scripts\activate (Windows activation)
 > venv\Scripts\activate.psi (ubuntu activation)
 requirements.txt
@@ -47,7 +53,7 @@ tuples:
 ------------------------------------------------
 AI:
     1. ML
-    2. DL
+    2. DL (https://1drv.ms/w/c/3c192f04000bd1d2/IQCb72zLT-NSSJ5n_qHr0T9SAXGPt9iYBv0-YW2ritlMh3Y?e=X1Csou)
     3. NLP
     4. Gen AI 
     5. Agentic AI
@@ -154,10 +160,27 @@ ML
             ----------
                 A. Clustering Algorithm:
                     a. K-Means Clustering
+                        - Euclidean formaula to identify the distancce between the Data points to Centroid .
                         - Based on the purchasing history need to clasify the data
+                        - To identify the K Value(number of clustering groups) programatically we have 2 methods
+                            - Elbow Method 
+                                - WCSS (Within the Cluster Square of Sums) formaula 
+                            - Sihouette Method
                     b. Hierarchical Clustering:
                         - Combination of More number of K-Means Clusterings
-                B. DBSCAN (density Based) Algorithm
+                    c. Agglomerative clustering
+                         - Used to identify the nearest elements and make a group
+                        - "bottom-up" hierarchical method that treats each data point as a single cluster and iteratively merges the closest pairs of clusters based on a distance metric and linkage criterion until one cluster remains
+                        - Ex: Monkeys groups, dogs group
+                B. DBSCAN ( Density Based Spatial Clustering of Applications with Noise) Algorithm
+                    - Clustering Based on Applications with Noise
+                    - Epsolon
+                    - Min Points - 3
+                        - Core point
+                        - Boundary point
+                            - Should have core point as Neighbour 
+                        - Noise Point (Outliers)
+                            - No Core, No min points
                 C. Dimensionality Reduction
                     a. PCA (Principal Component Analysis)
                         - Core idea is to create new features (Principal Components)
@@ -170,7 +193,7 @@ ML
                             - Hard to understand more number of columns 
                             - Some features are duplicate (correlated)
                         - Use Cases:
-                            - Compressing very arge image to small image without missing quality
+                            - Compressing very large image to small image without missing quality
                         - Steps for PCA:
                             Initially Take the dataset 
                             step 1: Find the mean value (for both x1 & x2)
@@ -183,11 +206,25 @@ ML
 
 
                     b. t-SNE
-                    c. Association Rule Learning
+                    c. Association Rule Learning (Diana)
+                        - Used to find the relat[ion between the items
+                        - Shopping mall items placing system (bread & butter)
+                        - Support 
+                            - How many purchesed both items
+                            - both items purchased / number of transaction
+                        - Confidence
+                            - both items purchased / single item purchased
                 D. 
 
         3. Reinforcement
-            - Machine learning Rewards or Punishments
+            - Machine learning from Rewards or Punishments
+                - Environment
+                - Agent
+                - Reward
+                    - Positive
+                    - Negative
+            - Q Learning
+                - Used to define the reward points
 
 
         
@@ -240,3 +277,97 @@ Error = y(actual)-y(prediction)
         Recall
         F1 Score
         train_test_split
+
+-------------------------------------------
+
+Deep Learning
+*************
+
+1. Standard deviation (σ):
+    - How data distributed with respective to average value or mean value (μ) 
+    - used for Risk Analysis
+    - Do reduce Standard Deviation we use Normalization:
+        - StandardScalar <---------scikit learn
+        - 80% Training
+        - 20% Testing
+        - train_test_split() <------ scikitlearn
+        - for each iteration(ephoch) rand to get the same data we will use random_state
+        - random_state=42 (it is universal)
+        - random_state = 42 is a common parameter used in libraries like scikit-learn to make results reproducible. What it means 
+            · It sets the seed for the random number generator. . This ensures that every time you run your code, you get the same random results (e.g., same train- test split, same shuffled data). Why 42? 
+            . No special mathematical meaning 
+            . It's a popular choice inspired by The Hitchhiker's Guide to the Galaxy, where 42 is "the answer to life, the universe, and everything."
+
+
+
+1. Regression 
+    - If model o/p is contineous numbers
+2. Classification
+    - If model output is binary
+3. Activation Functions
+    - Sigmoid
+        - Also called call Logistic Activation function / Classification Activation function.
+        - Applicable to classification
+        - o/p is binary (0 to 1)
+        - Shape of sigmoid activavtion function is S Shape
+        - It will work on back propagation algorithm
+        - mathematical formula is 1/1+e(pow(-x))
+        - Sigmoid functions as 2 types
+            - Binary Sigmoid function (binary data like 0 to 1), Break point is 0.5, Used for probability
+            - Bipolar Sigmoid Functions (out put is -1 to +1 like Movie reviewes), Break point is 0, used for positive or negative
+    - Softmax
+        - It will comes from multiple sigmoid functions 
+        - It will calculate the probability of the output
+        - It will find the highest probability
+        - Used in Multi-class classification
+    - ReLU
+        - Rectified Linear Unit
+        - Used to make negative values to 0
+        - formula is nf(x)=max(0,x)
+        - if it is negative value the final value will be rounded to 0
+        - if it is a positive value the final value will be x
+        - Drawback of ReLU will be Dying ReLU problem 
+        - It is making negative values as Zero, even also epochs will be increased and model wont learn anything because neurans got dead.
+        - To overcome this function we have another activation function i.e, LeakyReLU 
+    - LeakyReLU
+        - Instead of making 0, provide small inputs  to the negative values, model will try to learn the inputs again
+        - formula f(x)=max(0.1x,x)
+        - Instead of small inputs if we provide actial data, we can call Parametric ReLU 
+        - ReLU always we need to place with Hidden Layer, should not place with output layers
+        - Output layers only contains Sigmoid, Softmax 
+
+4. Loss & Why
+    - Loss (Error)
+        - Loss = (Actual)-(Predicted)
+        - Loss = y(actual)-y(predict)
+        - By using Loss only, model increases Accuracy
+5. Type of Losses
+    - MES (Mean Squared Error)
+        - Used to work in Regression problems
+        - Identies the loss and do the squares and find the average and submit to model and model will adjust the weights through back propagation algorithms, then it will generate new MSE, and keep on changing the epochs for best value
+    - Binary Cross Entropy
+        - If activation function is sigmoid, then we will use this.
+        - 
+    - Sparse Categorical Cross Entropy
+        - if the activation function is multi-class problem
+        -  
+
+tanh
+    - Convert any larger values to smaller values
+    - values range will be -1 to 1, mid value will be 0
+    - Used in Sentimental Analysis
+    - Eevn after modifying the weights model will not learn anything which is called Vanishing Gradient
+    - 
+
+
+CNN
+    - Convolutional Neural Network
+    - CL(1) will identify the edges (it wont devide image in to pixels) extracting initial edges can called premitive features
+    - Collaboration of premitive features is called complex features
+    - CL(n) will identy the full shape
+    - Each layer will convert complex layers to premitive layers and Each layer will learn and extract edges
+    - CNN overcomes 3 problems
+        - Computations cost
+        - Over Fittinig
+        - Loss of spacial features
+    
