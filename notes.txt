@@ -359,15 +359,31 @@ tanh
     - Eevn after modifying the weights model will not learn anything which is called Vanishing Gradient
     - 
 
+ANN:
+    - Artificial Neural Network
+    - ANN will devide input picture into number of pixels.
+    - Problem of ANN
+        - High  Computations cost
+        - Over Fittinig
+        - Loss of spacial feature
 
 CNN
     - Convolutional Neural Network
+    - Whereever intensity changed drastically automatically Edge will be created.
     - CL(1) will identify the edges (it wont devide image in to pixels) extracting initial edges can called premitive features
     - Collaboration of premitive features is called complex features
-    - CL(n) will identy the full shape
+    - Filters also called as Kernals, applying filter will tae care by CNN
+    - Moving filter to one step to right or one step down technically we cacn called as Stride
+    - Because of filteration middle pixels will participate and side pixels will not be participate where we may lose the importent pixels from corners. So we can add dummy data in all corners.
+    - Adding dummy data at top and bottom will called Padding
+    - CL(n) will identify the full shape
     - Each layer will convert complex layers to premitive layers and Each layer will learn and extract edges
     - CNN overcomes 3 problems
-        - Computations cost
+        - High Computations cost
         - Over Fittinig
         - Loss of spacial features
+    - Through back propagation algorithm CNN will improve the model accuracy.
+    - For every object one feature image will created. Removing empty spaces between 2 images then they will become one image. This type of optimization technique is called Pooling
+    -----------------------------------------
+    1. What is CNN
     
