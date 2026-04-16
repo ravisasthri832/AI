@@ -1,0 +1,31 @@
+Medical Project:
+****************
+Step 1:
+    Create Kaggle Account [uiuxravikumar@gmail.com]
+    https://www.kaggle.com/
+Step 2:
+    Create API key and Download kaggle.json file 
+    Click on Profile >> Settings >> Create Legacy API Key >> Kaggle.json will download
+Step 3:
+    Download dataset from kaggle
+    Windows:
+        C://Users//Ravikumar Pendyala // .kaggle (Create .kaggle folder)
+        Copy kaggle.json file in to .kaggle folder
+Step 4:
+    Version: ~=python 3.11
+    1. opencv-python
+        used to convert images to numbers
+    2. kaggle==1.5.16
+        helps to connecct kaggle datasets
+    pip install -r requirements.txt
+Step 5:
+    Create "download.py"
+    [ this files will download datasets]
+    import os
+    import zipfile
+    # download dataset
+    os.system("kaggle datasets download -d paultimothymooney/chest-xray-pneumonia")
+    # unzip
+    with zipfile.ZipFile("chest-xray-pneumonia.zip", 'r') as zip_ref:
+        zip_ref.extractall("data")
+

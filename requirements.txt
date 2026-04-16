@@ -7,3 +7,6 @@ uvicorn # it is a server to run fastapi
 openpyxl
 mlxtend
 tensorflow #it will work with 3.11 verstion
+
+opencv-python #used to convert images to numbers
+kaggle==1.5.16 #helps to connecct kaggle datasets
