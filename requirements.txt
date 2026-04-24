@@ -6,7 +6,10 @@ fastapi #build api
 uvicorn # it is a server to run fastapi
 openpyxl
 mlxtend
-tensorflow #it will work with 3.11 verstion
+tensorflow #it will work with 3.11 vertion with DLL
 
 opencv-python #used to convert images to numbers
 kaggle==1.5.16 #helps to connecct kaggle datasets
+flask 
+pillow # used to modify the input format  or modify the size
+python-multipart #upload the data [used to upload the images]

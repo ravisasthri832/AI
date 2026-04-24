@@ -387,3 +387,14 @@ CNN
     -----------------------------------------
     1. What is CNN
     
+
+RNN:
+    - To Deal Sequencial data RNN Will be used
+    - Recurrent Neural Networks
+    - 4 types
+        > one to one [Next word Prediction]
+        > one to many [Image captioning]
+        > many to one [In Movie reviews, Sentimental Analysis]
+        > many to many [Language translation]
+        
+

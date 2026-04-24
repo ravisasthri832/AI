@@ -18,6 +18,7 @@ Step 4:
     2. kaggle==1.5.16
         helps to connecct kaggle datasets
     pip install -r requirements.txt
+    3.Install fastAPI, uvicorn,numpy,pandas
 Step 5:
     Create "download.py"
     [ this files will download datasets]
@@ -28,4 +29,39 @@ Step 5:
     # unzip
     with zipfile.ZipFile("chest-xray-pneumonia.zip", 'r') as zip_ref:
         zip_ref.extractall("data")
+
+----------------------------------------------
+1. Training Data (complete syllabus)
+   Validation Data (semi final exams)
+   Testing Data (board exams)
+
+2. How CNN understand the images
+   Gray Scale Images
+    - White(255), Black (0), Grey(112)
+   RGB
+    - (97,79,207)
+    - In above 97 rows, 79 columns, total 207 colors
+
+3. Augementation
+   While training the image, change the direction of the image (stright, routate, blur, Zoom) and train the model will increase the performance (Ex, Fingerprint serup, Face setup in mobiles)
+
+4. EarlyStopping
+Stopping epochs after a specific threshold value and got the best output, It will ddecrease the unnecessary values.
+
+5. class_weight
+   100 Easy questions
+   50 Hard Questions 
+        Giving the importance to less quantity technically we can called class_weight
+    100 Normal x-rays
+    10 pnemonia x-rays [Telling important inputs to model is called class_weight]
+
+6. MobileNetV2
+   - It is a predefined model used to identify the accuracy or output
+   - It is a USA- Hospital - API's 
+   - Dont modify the previous learning ad so ignore last 20 inputs data
+
+7. Reducer LR
+   Backpropagation
+   Micro level monitoring we can called as Reducer LR
+   Dont jump 1 to 2 immediatly, just jump like 1.1, 1.2 etc
 
