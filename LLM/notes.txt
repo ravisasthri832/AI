@@ -1,0 +1,28 @@
+https://colab.research.google.com/
+LLM:
+    - Large Language Model
+    - LLM main thing is Machine Learing from Huge data
+    - LLM can work with NLP, Agentic AI etc
+    - If we give PDF to LLM it can Read, Write, Summarize, Translate, Answer, Wirte Code
+    - Examples of LLM
+        - ChatGPT
+        - GPT-5
+        - GPT-4
+        - Gemini
+        - Claude
+    - LLM not only for reading, it can also understand the context also
+    - LLM also able to understand the intension of the text 
+    - LLM cacn understand the meaning and tone of the content / data.
+    - LLM predict the next words also.
+    - LLM internal mechanisum will work with Transformers 
+        - Transformers internally performing tokenizations
+        - Converting Input to small tokens is called tokenizations.
+        - Initially we have Word tokenizations, but it is outdated but due to Huge Vocabulary it got outdated and no one is working with it.
+        - Later we have Character tokenizations, it will work like "I Love LLM" as ["I","", "L","o"......] because of crores of Characters performance is very low, so it also got eleminated
+        - Further later we have Subword tokenizations. At present we are using it in present GPT's. It works like, "Unhappiness" it tokenizes like ["Un","happy","ness"]. Already we trained huge amount of data so LLm will understand and devide the words.
+        - Advantages of Subword Tokenizations
+            - Able to learn or understand new words.
+            - Smaller Vocabulary
+            - Efficient than Word/Character Tokenizations
+            - Subword Tokenizations internally working with Byte Pair Encoding (BPE) Tokenizations
+            - Converting solid numbers to small vectors is called Embedding

@@ -396,5 +396,6 @@ RNN:
         > one to many [Image captioning]
         > many to one [In Movie reviews, Sentimental Analysis]
         > many to many [Language translation]
-        
 
+
+Implementing the task without user interference is Agentic AI

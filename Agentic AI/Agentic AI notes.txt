@@ -1,0 +1,25 @@
+Agentic AI:
+    - Implementing the task without user interference is Agentic AI
+    - While interacting with external websites need to define some protocol that is called as RAG Protocol
+    - Gathering the Bulk information we can called LLM
+
+Main Topics in Agentic AI:
+    - RAG Protocol
+    - LLM's
+    - Deployement
+    - Fast API
+    - Multi Agent 
+    - NgInx, Gateways, Performance etc. (AWS)
+    - Project 1: Single Agent Project
+    - Project 2: Multi Agent Project, Develop & Deployement
+    - Email Agentic AI
+
+Concepts in Agentic AI:
+    - LangChain
+    - LangGraph
+    - AutoGen
+    - CrewAI
+    - SemanticKernal
+
+
+mongodb+srv://admin:admin@ravikumarp.f7owmid.mongodb.net/?appName=RavikumarP    
