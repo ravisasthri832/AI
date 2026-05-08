@@ -26,3 +26,28 @@ LLM:
             - Efficient than Word/Character Tokenizations
             - Subword Tokenizations internally working with Byte Pair Encoding (BPE) Tokenizations
             - Converting solid numbers to small vectors is called Embedding
+    - LLM internal mechanisum Steps
+        - Input
+        - Tokenizations
+        - Token Id's
+        - Embedding
+            - Embedding Sizes are different for each GPT model
+        - Positional Encoding
+            - Model will gvie the answers based on positions only
+        - Self Attention
+            - Extracting each meaning of the each word in the statement is called Self Attention
+        - Multi Head Attention
+            - In this part LLM model will understand..
+            - Grammer
+            - Tones
+            - Emotion 
+            - Subject
+        - Feed Forward Layer
+            - Used to Refine the generated output
+        - Output (Softmax)
+
+    - LLM Categorizes the data into 2 types
+        - Repeated words
+        - Not Repeated words
+
+    - 
